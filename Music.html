@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Project</title>
+<!------------------   Google Fonts   ------------------------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Julee&display=swap" rel="stylesheet">
+
+<!----------------------  Font awesome  ------------------------------------->
+<script
+src="https://kit.fontawesome.com/de471be2d6.js"
+crossorigin="anonymous"></script>
+
+<!-- Link Swiper's CSS -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+
+<!--------------   AOS Library   ----------------------->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<!--------------------------  CSS  --------------------------------------->
+    <link rel="stylesheet" href="./root.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+      <!------------------------------  Header --------------------------------->
+
+
+                <div class="music-header" id="msHeader" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1000">
+                    <div class="navagation-bar">
+                        <div class="logo"  data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                            <h1>LOGO</h1>
+                        </div>
+                        <div class="right-bar" data-aos="fade-up"
+                        data-aos-duration="3000">
+                            <div class="search-box">
+                                <input type="text" placeholder="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="sign-btn">
+                            <button>Sign in</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slide-bar" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                        <a href="News.html"><i class="fa-regular fa-newspaper"></i></a>
+                        <a href="Concert.html"><i class="fa-solid fa-ticket"></i></a>
+                        <a href="Music.html"><i class="fa-solid fa-music"></i></a>
+                        <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a>
+                        
+                    </div>
+                    <div class="three-dots">
+                        <div class="dot" id="msdot1" onclick="msislide(this)"></div>
+                        <div class="dot" id="msdot2" onclick="msislide(this)"></div>
+                        <div class="dot" id="msdot3" onclick="msislide(this)"></div>
+                    </div>
+
+                    <div class="slider-song-title">
+                            <h2  id="singer">KRIS WU</h2>  
+                            <div class="title-one">
+                                <i class="fa-sharp fa-solid fa-music"></i>
+                            <span id="songName">Song - July</span>
+                        </div>
+                            <div class="title-two">
+                            <i class="fa-sharp fa-solid fa-circle-play"></i>
+                            <span>Play</span>
+                        </div>
+                    </div>
+                </div>
+                
+             
+
+
+      <!------------------------------  End Header --------------------------------->
+
+      <!-------------------------------  Songs Section  ------------------------------->
+
+                <div class="song-section">
+                    <h1 data-aos="fade-right" data-aos-duration="700">Song <span>that</span> u played</h1>
+                    <div class="line" data-aos="fade-left" data-aos-duration="700"></div>
+                    <div class="box">
+                    <div class="music-box" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div class="top-bar">
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <p>Now Playing</p>
+                            <i class="fa-regular fa-heart" id="blankHeart"></i>
+                            <i class="fa-solid fa-heart fullHeart" id="fullHeart"></i>
+                        </div>
+                        <div class="music-image">
+<img src="./Img/albumn.jpg" id="playingSongImg">
+<!-- <audio id="OrgAudio" src="./songs/July.mp3"></audio> -->
+                        </div>
+                        <div class="title-name">
+                            <span class="sg">Song  - </span><span id="playingSongName"> </span><br><br>
+                            <span class="sg">Singer - </span><span id="playingSongSingerName"></span>
+                        </div>
+                        <div class="playing-song">
+                            <div class="song-line">
+                                <div id="currentTimeWidth"></div>
+                            </div>
+                            <div class="song-time">
+                            <span id="playingTime"></span>
+                            <span id="songTime"></span>
+                            <!-- <audio class="clickAudio" src="./songs/July.mp3" id="startAudio"></audio> -->
+                        </div>
+                        </div>
+                        <div class="music-icons">
+                            <i class="fa-sharp fa-solid fa-repeat"></i>
+                            <div class="song-run">
+                            <i class="fa-solid fa-backward" id="prev"></i>
+                            <i class="fa-solid fa-circle-play" id="play"></i>
+                            <i class="fa-solid fa-circle-pause" id="pause"></i>
+                            <i class="fa-solid fa-forward" id="next"></i>
+                        </div>
+                            <i class="fa-solid fa-list"></i>
+                         </div>
+                    </div>
+                    <div class="favourite-music-box" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div class="favourite-box-line1">
+                            <h4>Favourites songs list</h4>
+                            <i class="fa-solid fa-list"></i>
+                            
+                        </div>
+                        <hr class="underline-hr">
+                      
+                    </div>
+                </div>
+                </div>
+
+      <!-------------------------------  End Songs Section  ---------------------->
+
+
+      <!--------------------------------  About Songs -------------------->
+
+                <div class="about-songs">
+                    <div class="songs-container">
+                        <h2 data-aos="fade-right" data-aos-duration="700">Top Songs</h2>
+                        <div class="line" data-aos="fade-left" data-aos-duration="700"></div>
+                        <div class="list-of-songs swiper mySwiper">
+                            <!-- <i class="fa-sharp fa-solid fa-circle-left swiper-button-prev left-slide"></i> -->
+                            <div class="top-songs swiper-wrapper">
+                                <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="500">
+                                <img src="./Img/100000hours(justin-bieber).jpg" class="clickSong">
+                                <audio class="clickAudio" src="./songs/100000hours.mp3"></audio>
+                                <h4 class="clickSingerName">Justin Bieber</h4>
+                                <p class="clickSingerSongName">100000 hours</p>
+                           
+                                </div>
+                                <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="700">
+                                <img src="./Img/As it was(harry style).jpg" class="clickSong">
+                                <audio class="clickAudio" src="./songs/asItWas.mp3"></audio>
+                                <h4 class="clickSingerName">Harry Style</h4>
+                                <p class="clickSingerSongName">As it was</p>
+                                </div>
+                                <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="900">
+                                <img src="./Img/blue bird(yokoyama yui).jpg" class="clickSong">
+                                <audio class="clickAudio" src="./songs/blueBird.mp3"></audio>
+                                <h4 class="clickSingerName">Yokoyama Yui</h4>
+                                <p class="clickSingerSongName">Blue Bird</p>
+                                </div>
+                                <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="900">
+                                    <img src="./Img/i like it(cardi b Ft. bad bunny & J).jpg" class="clickSong">
+                                    <audio class="clickAudio" src="./songs/ilikeit.mp3"></audio>
+                                    <h4 class="clickSingerName">CardiB Ft.BadBunny&J</h4>
+                                    <p class="clickSingerSongName">100000 hours</p>
+                                    </div>
+                                    <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1200">
+                                    <img src="./Img/Cuddle(yung hugo & Grace).jpg" class="clickSong">
+                                    <audio class="clickAudio" src="./songs/Cuddle.mp3"></audio>
+                                    <h4 class="clickSingerName">Yung Hugo & Grace</h4>
+                                    <p class="clickSingerSongName">Cuddle</p>
+                                    </div>
+                                    <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1400">
+                                    <img src="./Img/Death Bed(Powfu - ft. beabadoobee).jpg" class="clickSong"> 
+                                    <audio class="clickAudio" src="./songs/Deathbed.mp3"></audio>
+                                    <h4 class="clickSingerName">Powfu ft. Beabadoobee</h4>
+                                    <p class="clickSingerSongName">Death Bed</p>
+                                    </div>
+                                    <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1600">
+                                        <img src="./Img/industryBaby(lil-nas-x).jpg" class="clickSong">
+                                        <audio class="clickAudio" src="./songs/industryBaby.mp3"></audio>
+                                        <h4 class="clickSingerName">Lil-Nas-x</h4>
+                                        <p class="clickSingerSongName">Industry Baby</p>
+                                        </div>
+                                        <div class="songs-name-singer swiper-slide">
+                                            <img src="./Img/Mo Bamba(sheck wes).jpg" class="clickSong">
+                                            <audio class="clickAudio" src="./songs/Mobamba.mp3"></audio>
+                                            <h4 class="clickSingerName">Sheck Wes</h4>
+                                            <p class="clickSingerSongName">Mo Bamba</p>
+                                            </div>
+                                            <div class="songs-name-singer swiper-slide">
+                                            <img src="./Img/myor nay ml soung(hlwan-paing).jpg" class="clickSong">
+                                            <audio class="clickAudio" src="./songs/myornaymlsoung.mp3"></audio>
+                                            <h4 class="clickSingerName">Hlwan Paing</h4>
+                                            <p class="clickSingerSongName">Myor Ny Ml Soung</p>
+                                            </div>
+                                            <div class="songs-name-singer swiper-slide">
+                                                <img src="./Img/Selfish love(selena gomez).jpg" class="clickSong">
+                                                <audio class="clickAudio" src="./songs/selfishLove.mp3"></audio>
+                                                <h4 class="clickSingerName">Selena Gomez</h4>
+                                                <p class="clickSingerSongName">Selfish Love</p>
+                                                </div>
+                                                <div class="songs-name-singer swiper-slide">
+                                                    <img src="./Img/sad(xxxtentacion).jpg" class="clickSong">
+                                                    <audio class="clickAudio" src="./songs/sad.mp3"></audio>
+                                                    <h4 class="clickSingerName">XXXtentacion</h4>
+                                                    <p class="clickSingerSongName">Sad</p>
+                                                    </div>
+                                                    <div class="songs-name-singer swiper-slide">
+                                                        <img src="./Img/letterizenith.jpg" class="clickSong">
+                                                        <audio class="clickAudio" src="./songs/letter i.mp3"></audio>
+                                                        <h4 class="clickSingerName">Zenith</h4>
+                                                        <p class="clickSingerSongName">Letter i</p>
+                                                        </div>
+                                       
+                            </div>
+                            <!-- <div class="swiper-button-next "><i class="fa-solid fa-circle-right"></i></div> -->
+                            <!-- <div class="swiper-button-prev "><i class="fa-solid fa-circle-left"></i></div> -->
+                         
+                        </div>
+                        <i class="fa-sharp fa-solid fa-circle-left swiper-button-prev left-slide" data-aos="fade-left" data-aos-duration="700"></i>
+                        <i class="fa-solid fa-circle-right swiper-button-next right-slide" data-aos="fade-right" data-aos-duration="700"></i>
+                    </div>
+
+
+
+                    <div class="songs-container">
+                        <h2 data-aos="fade-right" data-aos-duration="700">Trending Songs</h2>
+                        <div class="line" data-aos="fade-left" data-aos-duration="700"></div>
+                        <div class="list-of-songs swiper mySwiper">
+                            
+                            <div class="top-songs swiper-wrapper">
+                                <div class="songs-name-singer swiper-slide"data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="500">
+                                <img src="./Img/OOTD(yung-hugo).jpg" class="clickSong">
+                                <audio class="clickAudio" src="./songs/OOTD.mp3"></audio>
+                                <h4 class="clickSingerName">Yung Hugo</h4>
+                                <p class="clickSingerSongName">OOTD</p>
+                                </div>
+                                <div class="songs-name-singer swiper-slide"data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="700">
+                                <img src="./Img/red(Talyor swit).jpg" class="clickSong">
+                                <audio class="clickAudio" src="./songs/red.mp3"></audio>
+                                <h4 class="clickSingerName">Talyor swift</h4>
+                                <p class="clickSingerSongName">Red</p>
+                                </div>
+                                <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="900">
+                                <img src="./Img/Positions(ariana).jpg" class="clickSong">
+                                <audio class="clickAudio" src="./songs/positions.mp3"></audio>
+                                <h4 class="clickSingerName">Ariana</h4>
+                                <p class="clickSingerSongName">Positions</p>
+                                </div>
+                                <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="1000">
+                                    <img src="./Img/peaches(Jb).jpg" class="clickSong">
+                                    <audio class="clickAudio" src="./songs/Peaches.mp3"></audio>
+                                    <h4 class="clickSingerName">Justin Bieber</h4>
+                                    <p  class="clickSingerSongName">Peaches</p>
+                                    </div>
+                                    <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1200">
+                                    <img src="./Img/oldtownroad(lilNasX & Billy Ray Cyrus).jpg" class="clickSong">
+                                    <audio class="clickAudio" src="./songs/OldTownRoad.mp3"></audio>
+                                    <h4 class="clickSingerName">lilNasX & Billy Ray Cyrus</h4>
+                                    <p class="clickSingerSongName">Oldtownroad</p>
+                                    </div>
+                                    <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1400">
+                                    <img src="./Img/Your Power(Billie Elish).jpg" class="clickSong">
+                                    <audio class="clickAudio" src="./songs/yourPower.mp3"></audio>
+                                    <h4 class="clickSingerName">Billie Elish</h4>
+                                    <p class="clickSingerSongName">Your Power</p>
+                                    </div>
+                                    <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1600">
+                                        <img src="./Img/youBetrayedMe(Olivia).jpg" class="clickSong">
+                                        <audio class="clickAudio" src="./songs/youbetrayedme.mp3"></audio>
+                                        <h4 class="clickSingerName">Olivia</h4>
+                                        <p class="clickSingerSongName">You Betrayed Me</p>
+                                        </div>
+                                        <div class="songs-name-singer swiper-slide">
+                                            <img src="./Img/Up town funk(Mark ronson & bruno mars).jpg" class="clickSong">
+                                            <audio class="clickAudio" src="./songs/uptownfunk.mp3"></audio>
+                                            <h4 class="clickSingerName">MarkRonson & Bruno Mars</h4>
+                                            <p class="clickSingerSongName">Up Town Funk</p>
+                                            </div>
+                                            <div class="songs-name-singer swiper-slide">
+                                                <img src="./Img/The best day(talyor swift).jpg" class="clickSong">
+                                                <audio class="clickAudio" src="./songs/theBestDay.mp3"></audio>
+                                                <h4 class="clickSingerName">Talyor Swift</h4>
+                                                <p class="clickSingerSongName">The Best Day</p>
+                                                </div>
+                                                <div class="songs-name-singer swiper-slide">
+                                                    <img src="./Img/sicko mode(travis scott & more).jpg" class="clickSong">
+                                                    <audio class="clickAudio" src="./songs/sickoMode.mp3"></audio>
+                                                    <h4 class="clickSingerName">Travis Scott</h4>
+                                                    <p class="clickSingerSongName">Sicko Mode</p>
+                                                    </div>
+                                                    <div class="songs-name-singer swiper-slide">
+                                                        <img src="./Img/gfattsapelphyu.jpg" class="clickSong">
+                                                        <audio class="clickAudio" src="./songs/sapelphyu.mp3"></audio>
+                                                        <h4 class="clickSingerName">G Fatt</h4>
+                                                        <p class="clickSingerSongName">Sabel phyu lay</p>
+                                                        </div>
+                                                    
+                            </div>
+                            
+                        </div>
+                        <i class="fa-sharp fa-solid fa-circle-left swiper-button-prev left-slide" data-aos="fade-left" data-aos-duration="700"></i>
+                        <i class="fa-solid fa-circle-right swiper-button-next right-slide" data-aos="fade-right" data-aos-duration="700"></i>
+                    </div>
+
+
+                    <div class="songs-container">
+                        <h2 data-aos="fade-right" data-aos-duration="700">New Songs</h2>
+                        <div class="line" data-aos="fade-left" data-aos-duration="700"></div>
+                        <div class="list-of-songs swiper mySwiper">
+                         
+                            <div class="top-songs swiper-wrapper">
+                                <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="500">
+                                <img src="./Img/Cross me(Ed Sheeran).jpg" class="clickSong">
+                                <audio class="clickAudio" src="./songs/crossMe.mp3"></audio>
+                                <h4 class="clickSingerName">Ed Sheeran</h4>
+                                <p class="clickSingerSongName">Cross me</p>
+                                </div>
+                                <div class="songs-name-singer  swiper-slide"data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="700">
+                                <img src="./Img/ghost(justin-bieber).jpg" class="clickSong">
+                                <audio class="clickAudio" src="./songs/Ghost.mp3"></audio>
+                                <h4 class="clickSingerName">Justin Bieber</h4>
+                                <p class="clickSingerSongName">Ghost</p>
+                                </div>
+                                <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="900">
+                                <img src="./Img/July(kris-wu).jpg" class="clickSong">
+                                <audio class="clickAudio" src="./songs/July.mp3" id="startAudio"></audio>
+                                <h4 class="clickSingerName">Kris Wu</h4>
+                                <p class="clickSingerSongName">July</p>
+                                </div>
+                                <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="1100">
+                                    <img src="./Img/kyi phyu ml so(hlwan-paing).jpg" class="clickSong">
+                                    <audio class="clickAudio" src="./songs/myornaymlsoung.mp3"></audio>
+                                    <h4 class="clickSingerName">Hlwan Paing</h4>
+                                    <p class="clickSingerSongName">Kyi Phyu ml so</p>
+                                    </div>
+                                    <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1300">
+                                    <img src="./Img/Like my father(jax).jpg" class="clickSong">
+                                    <audio class="clickAudio" src="./songs/likeMyFather.mp3"></audio>
+                                    <h4 class="clickSingerName">Jax</h4>
+                                    <p class="clickSingerSongName">Like My Father</p>
+                                    </div>
+                                    <div class="songs-name-singer swiper-slide" data-aos="fade-down"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1500">
+                                    <img src="./Img/Love story(talyor swift).jpg" class="clickSong">
+                                    <audio class="clickAudio" src="./songs/loveStory.mp3"></audio>
+                                    <h4 class="clickSingerName">Talyor Swift</h4>
+                                    <p class="clickSingerSongName">Love Story</p>
+                                    </div>
+                                    <div class="songs-name-singer swiper-slide">
+                                        <img src="./Img/Lwan(Yung hugo).jpg" class="clickSong">
+                                        <audio class="clickAudio" src="./songs/Lwan.mp3"></audio>
+                                        <h4 class="clickSingerName">Yung Hugo</h4>
+                                        <p class="clickSingerSongName">Lwan</p>
+                                        </div>
+                                        <div class="songs-name-singer swiper-slide">
+                                            <img src="./Img/suzume(nanoka hara).jpg" class="clickSong">
+                                            <audio class="clickAudio" src="./songs/suzume.mp3"></audio>
+                                            <h4 class="clickSingerName">Nanoka Hara</h4>
+                                            <p class="clickSingerSongName">Suzume</p>
+                                            </div>
+                                            <div class="songs-name-singer swiper-slide">
+                                                <img src="./Img/sunroof(nicky youre dazy).jpg" class="clickSong">
+                                                <audio class="clickAudio" src="./songs/sunroof.mp3"></audio>
+                                                <h4 class="clickSingerName">Nicky Youre Dazy</h4>
+                                                <p class="clickSingerSongName">Sunroof</p>
+                                                </div>
+                                                <div class="songs-name-singer swiper-slide">
+                                                    <img src="./Img/SucideLove(yung-hugo).jpg" class="clickSong">
+                                                    <audio class="clickAudio" src="./songs/sucideLove.mp3"></audio>
+                                                    <h4 class="clickSingerName">Yung Hugo</h4>
+                                                    <p class="clickSingerSongName">Sucide Love</p>
+                                                    </div>
+                                                    <div class="songs-name-singer swiper-slide">
+                                                        <img src="./Img/pachesawkyiphyu.jpg" class="clickSong">
+                                                        <audio class="clickAudio" src="./songs/panche.mp3"></audio>
+                                                        <h4 class="clickSingerName">Saw Kyi Phyu</h4>
+                                                        <p class="clickSingerSongName">Pan Che</p>
+                                                        </div>
+                            </div>
+                         
+                        </div>
+                        <i class="fa-sharp fa-solid fa-circle-left swiper-button-prev left-slide" data-aos="fade-left" data-aos-duration="700"></i>
+                        <i class="fa-solid fa-circle-right swiper-button-next right-slide" data-aos="fade-right" data-aos-duration="700"></i>
+                    </div>
+
+
+                </div>
+
+      <!--------------------------------  End About Songs -------------------->
+
+
+           <!------------------------------  Footer --------------------------------->
+
+<div class="footer">
+    <div class="footer-container">
+        <div class="Footer-details">
+            <h3>Languages</h3>
+            <p>English</p>
+            <p>Japanese</p>
+            <p>Korea</p>
+            <p>Myanmar</p>
+        </div>
+        <div class="Footer-details">
+            <h3>Pop Songs</h3>
+            <p>Rock Songs</p>
+            <p>Rap Songs</p>
+            <p>Sad Songs</p>
+            <p>Dj Songs</p>
+            <p>Sufi Songs</p>
+        </div>
+        <div class="Footer-details">
+            <h3>Company</h3>
+            <p>Google</p>
+            <p>Spotify</p>
+            <p>Netflix</p>
+            <p>Channel</p>
+        </div>
+        <div class="Footer-details">
+            <h3>Questions</h3>
+            <p>What can i help u?</p>
+            <p>Do u have some error?</p>
+            <p>Help Center</p>
+            <p>Service Center</p>
+        </div>
+        <div class="Footer-details">
+            <h3>Contact</h3>
+            <p>+9594382190</p>
+            <p>no.150, hlaing, minstreet</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+   <!------------------------------  End Footer --------------------------------->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 7,
+        spaceBetween: 20,
+        // slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+           0: {
+            slidesPerView: 1,
+           },
+           360: {
+            slidesPerView: 2,
+           },
+           500: {
+            slidesPerView: 3,
+           },
+           700:{
+            slidesPerView: 4,
+           },
+           900: {
+            slidesPerView: 5,
+           },
+           1070: {
+            slidesPerView: 6,
+           },
+        },
+      });
+    </script>
+
+<script>
+    AOS.init();
+  </script>
+<script src="./music.js"></script>
+<script src="./songPlay.js"></script>
+</body>
+</html>      

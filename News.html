@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Project</title>
+<!------------------   Google Fonts   ------------------------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Julee&display=swap" rel="stylesheet">
+
+<!----------------------  Font awesome  ------------------------------------->
+<script
+src="https://kit.fontawesome.com/de471be2d6.js"
+crossorigin="anonymous"></script>
+
+
+    <!--------------   AOS Library   ----------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--------------------------  CSS  --------------------------------------->
+    <link rel="stylesheet" href="./root.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!------------------------------  Header --------------------------------->
+
+
+                <div class="news-header" id="newsHeader" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1000">
+                    <div class="navagation-bar">
+                        <div class="logo" data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                            <h1>LOGO</h1>
+                        </div>
+                        <div class="right-bar" data-aos="fade-up"
+                        data-aos-duration="3000">
+                            <div class="search-box">
+                                <input type="text" placeholder="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="sign-btn">
+                            <button>Sign in</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slide-bar" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                        <a href="News.html"><i class="fa-regular fa-newspaper"></i></a>
+                        <a href="Concert.html"><i class="fa-solid fa-ticket"></i></a>
+                        <a href="Music.html"><i class="fa-solid fa-music"></i></a>
+                        <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a>
+                        
+                    </div>
+                    <div class="three-dots">
+                        <div class="dot" id="newdot1" onclick="newsslide(this)"></div>
+                        <div class="dot" id="newdot2" onclick="newsslide(this)"></div>
+                        <div class="dot" id="newdot3" onclick="newsslide(this)"></div>
+                    </div>
+                </div>
+                
+             
+
+
+      <!------------------------------  End Header --------------------------------->
+
+
+      <!-------------------------------    News section    ------------------>
+      <div class="News">
+        <h1 data-aos="fade-right" data-aos-duration="700">Breaking <span>N</span>ews</h1>
+        <div class="line" data-aos="fade-left" data-aos-duration="700"></div>
+
+        <div class="news-container">
+        <div class="left-news">
+            <div class="first-news">
+                <div class="first-news-img" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="./Img/JustinBieberNews.jpg">
+                <div class="updated">
+                    <div class="calender">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>21.4.2020</span>
+                    </div>
+                    <div class="comments">
+                        <i class="fa-regular fa-comment"></i>
+                        <span>2.1M</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="first-news-details" data-aos="zoom-out-up" data-aos-duration="1000">
+                <h2>Justin Bieber married with Sina Jin</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nece
+                    ssitatibus rem ipsum, dolor sit amet consectetur adipisicing elit. Nece
+                    ssitatibus rem ipsum, dolor sit amet consectetur adipisicing elit. Nece
+                    ssitatibus tempore incidunt labore consectetur magni.</p>
+            </div>
+            <div class="first-news-btn" data-aos="zoom-in-up" data-aos-duration="1000">
+                <button>Read More</button>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            </div>
+
+            <div class="first-news" >
+                <div class="first-news-img" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="./Img/Kris Wu news.jpg">
+                <div class="updated">
+                    <div class="calender">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>21.4.2020</span>
+                    </div>
+                    <div class="comments">
+                        <i class="fa-regular fa-comment"></i>
+                        <span>2.1M</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="first-news-details" data-aos="zoom-out-up" data-aos-duration="1000">
+                <h2>Kris Wu arrested by China Presedient</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nece
+                    ssitatibus rem ipsum, dolor sit amet consectetur adipisicing elit. Nece
+                    ssitatibus rem ipsum, dolor sit amet consectetur adipisicing elit. Nece
+                    ssitatibus tempore incidunt labore consectetur magni.</p>
+            </div>
+            <div class="first-news-btn" data-aos="zoom-in-up" data-aos-duration="1000">
+                <button>Read More</button>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            </div>
+
+
+
+            <div class="first-news">
+                <div class="first-news-img">
+                <img src="./Img/BTS news.jpg">
+                <div class="updated">
+                    <div class="calender">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>21.4.2020</span>
+                    </div>
+                    <div class="comments">
+                        <i class="fa-regular fa-comment"></i>
+                        <span>2.1M</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="first-news-details" data-aos="zoom-out-up" data-aos-duration="1000">
+                <h2>BTS's offical theme song for 2022 World Cup</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nece
+                    ssitatibus rem ipsum, dolor sit amet consectetur adipisicing elit. Nece
+                    ssitatibus rem ipsum, dolor sit amet consectetur adipisicing elit. Nece
+                    ssitatibus tempore incidunt labore consectetur magni.</p>
+            </div>
+            <div class="first-news-btn" data-aos="zoom-in-up" data-aos-duration="1000">
+                <button>Read More</button>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            </div>
+
+        </div>
+
+            <div class="right-news">
+                <h2 data-aos="fade-left" data-aos-duration="700">Catageory</h2>
+                <div class="catageory">
+                    <div class="catageory-news" data-aos="fade-up" data-aos-duration="700">
+                        <h4>Singers News</h4>
+                        <span>(20)</span>
+                    </div>
+                    <div class="catageory-news" data-aos="fade-up" data-aos-duration="900">
+                        <h4>Artists News</h4>
+                        <span>(25)</span>
+                    </div>
+                    <div class="catageory-news" data-aos="fade-up" data-aos-duration="1200">
+                        <h4>New Albums</h1>
+                        <span>(10)</span>
+                    </div>
+                    <div class="catageory-news" data-aos="fade-up" data-aos-duration="1500">
+                        <h4>Upcoming Songs</h1>
+                        <span>(45)</span>
+                    </div>
+                </div>
+
+                <div class="top5songs">
+                    <h1 data-aos="fade-left" data-aos-duration="700">Top 5 Songs</h1>
+                    <div class="top-songs-container">
+                        <div class="top-song-img" data-aos="fade-left" data-aos-duration="900">
+                            <img src="./Img/topSongJB(peaches).jpg">
+                        </div>
+                        <div class="updated">
+                            <div class="calender">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>21.4.2020</span>
+                            </div>
+                            <div class="comments">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>2.1M</span>
+                            </div>
+                        </div>
+                        <h3 data-aos="fade-right" data-aos-duration="700">1.  Justin Bieber (Peaches)</h3>
+                    </div>
+
+                    <div class="top-songs-container">
+                        <div class="top-song-img" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="./Img/topSong Ed Sheeran(cross me).jpg">
+                        </div>
+                        <div class="updated">
+                            <div class="calender">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>20.4.2020</span>
+                            </div>
+                            <div class="comments">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>1.1M</span>
+                            </div>
+                        </div>
+                        <h3 data-aos="fade-right" data-aos-duration="700">2.  Ed Sheeran (Cross Me)</h3>
+                    </div>
+
+
+                    <div class="top-songs-container">
+                        <div class="top-song-img" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="./Img/topSongAriana(positions).jpg">
+                        </div>
+                        <div class="updated">
+                            <div class="calender">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>21.4.2022</span>
+                            </div>
+                            <div class="comments">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>3.2M</span>
+                            </div>
+                        </div>
+                        <h3 data-aos="fade-right" data-aos-duration="700">3.  Ariana (Positions)</h3>
+                    </div>
+
+
+                    <div class="top-songs-container">
+                        <div class="top-song-img">
+                            <img src="./Img/topSongBillie Elish(your power).jpg">
+                        </div>
+                        <div class="updated">
+                            <div class="calender" data-aos="fade-left" data-aos-duration="1000">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>11.2.2020</span>
+                            </div>
+                            <div class="comments">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>2.9M</span>
+                            </div>
+                        </div>
+                        <h3 data-aos="fade-right" data-aos-duration="700">4.  Billie Elish (Your Power)</h3>
+                    </div>
+
+                    <div class="top-songs-container">
+                        <div class="top-song-img" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="./Img/topSongSelena Gomez(selfish love).jpg">
+                        </div>
+                        <div class="updated">
+                            <div class="calender">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>11.2.2020</span>
+                            </div>
+                            <div class="comments">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>2.9M</span>
+                            </div>
+                        </div>
+                        <h3 data-aos="fade-right" data-aos-duration="700">5.  Selena Gomez(selfish love)</h3>
+                    </div>
+
+
+                    <div class="top-songs-container">
+                        <div class="top-song-img" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="./Img/topSongtalyor swift (the best day).jpg">
+                        </div>
+                        <div class="updated">
+                            <div class="calender">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>11.2.2020</span>
+                            </div>
+                            <div class="comments">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>12.19M</span>
+                            </div>
+                        </div>
+                        <h3 data-aos="fade-right" data-aos-duration="700">5.  Talyor Swift (The Best Day)</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+    </div>
+    </div>
+
+ <!-------------------------------   End News section    ------------------>
+
+ <!-------------------------------------   Message Box   ---------------------->
+
+            <div class="message-box">
+                <h1 data-aos="fade-right" data-aos-duration="700">Message <span>B</span>ox</h1>
+                <div class="line" data-aos="fade-left" data-aos-duration="700"></div>
+                <div class="message-box-container">
+                    <div class="message-box-details">
+                        <div class="left-message-box-container">
+                            <div class="message-input-field" data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" >
+                            <label for="">Name</label><br>
+                            <input type="text">
+                        </div>
+                        <div class="message-input-field" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                            <label for="">Email Address</label><br>
+                            <input type="text">
+                        </div>
+                        <div class="message-input-field" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-duration="1300">
+                            <label for="">Message</label><br>
+                            <textarea></textarea>
+                        </div>
+                        </div>
+                        <div class="right-message-box-container" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <p>Upload Your Profile</p>
+                        </div>
+                    </div>
+                    <div class="message-box-btn" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="1700">
+                    <button>Send</button>
+                </div>
+                </div>
+            </div>
+
+  <!-------------------------------------  End Message Box   ---------------------->
+
+
+      <!------------------------------  Footer --------------------------------->
+
+      <div class="footer">
+        <div class="footer-container">
+            <div class="Footer-details">
+                <h3>Languages</h3>
+                <p>English</p>
+                <p>Japanese</p>
+                <p>Korea</p>
+                <p>Myanmar</p>
+            </div>
+            <div class="Footer-details">
+                <h3>Pop Songs</h3>
+                <p>Rock Songs</p>
+                <p>Rap Songs</p>
+                <p>Sad Songs</p>
+                <p>Dj Songs</p>
+                <p>Sufi Songs</p>
+            </div>
+            <div class="Footer-details">
+                <h3>Company</h3>
+                <p>Google</p>
+                <p>Spotify</p>
+                <p>Netflix</p>
+                <p>Channel</p>
+            </div>
+            <div class="Footer-details">
+                <h3>Questions</h3>
+                <p>What can i help u?</p>
+                <p>Do u have some error?</p>
+                <p>Help Center</p>
+                <p>Service Center</p>
+            </div>
+            <div class="Footer-details">
+                <h3>Contact</h3>
+                <p>+9594382190</p>
+                <p>no.150, hlaing, minstreet</p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+          <!------------------------------  End Footer --------------------------------->
+          <script>
+            AOS.init();
+          </script>
+<script src="./music.js"></script>
+      </body>
+      </html>

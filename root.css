@@ -1,0 +1,17 @@
+:root{
+    --logoFont: 'Julee', cursive;
+    --anotherFont: 'Inter', sans-serif;
+    --btncolorAndBorderColor: #FF0000;
+    --titleUnderlineAndNav: #ED0F0F;
+    --textOutline: #FC0000;
+    --serviceBox: #FA0707;
+    --musicBoxMsgPaymentBox: #AA2F2F;
+    --boxshadow: #CFCFCF;
+    --footerTextColor: #FFD6D6;
+    --navBgServiceBox: #262626;
+    --footerBg: #1B1B1B;
+    --mostUseColor1: white;
+    --mostUseColor2: black;
+    --imgshadow: #D1A8A8;
+    --inputBox: #7A1818;
+}    

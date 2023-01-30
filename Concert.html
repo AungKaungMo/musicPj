@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Project</title>
+<!------------------   Google Fonts   ------------------------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Julee&display=swap" rel="stylesheet">
+
+<!----------------------  Font awesome  ------------------------------------->
+<script
+src="https://kit.fontawesome.com/de471be2d6.js"
+crossorigin="anonymous"></script>
+
+    <!--------------   AOS Library   ----------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--------------------------  CSS  --------------------------------------->
+    <link rel="stylesheet" href="./root.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+      <!------------------------------  Header --------------------------------->
+
+
+                <div class="concert-header" id="conHeader" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1000">
+                    <div class="navagation-bar">
+                        <div class="logo" data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                            <h1>LOGO</h1>
+                        </div>
+                        <div class="right-bar" data-aos="fade-up"
+                        data-aos-duration="3000">
+                            <div class="search-box">
+                                <input type="text" placeholder="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="sign-btn">
+                            <button>Sign in</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slide-bar" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                        <a href="News.html"><i class="fa-regular fa-newspaper"></i></a>
+                        <a href="Concert.html"><i class="fa-solid fa-ticket"></i></a>
+                        <a href="Music.html"><i class="fa-solid fa-music"></i></a>
+                        <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a>
+                        
+                    </div>
+                    <div class="three-dots">
+                        <div class="dot" id="condot1" onclick="conslide(this)"></div>
+                        <div class="dot" id="condot2" onclick="conslide(this)"></div>
+                        <div class="dot" id="condot3" onclick="conslide(this)"></div>
+                    </div>
+                </div>
+          
+                <!----------------------   Concert & shows  ----------------------------->
+
+
+                <div class="concert-shows">
+                    <h1 data-aos="fade-left" data-aos-duration="700">Concerts <span>&</span> Shows</h1>
+                    <div class="line" data-aos="fade-right" data-aos-duration="700"></div>
+                    <div class="concert-details">
+                    <div class="left-details" data-aos="fade-right"
+                    data-aos-delay="350">
+                        <div class="title">
+                            <h2>Concert Title</h2>
+                            <p>Justin Bieber's show and many other artists</p>
+                            <hr>
+                        </div>
+                        <div class="vocalist">
+                            <h2 data-aos="fade-right"
+                            data-aos-delay="470">Main Vocalists</h2>
+                            <img src="./Img/MainVocalist(justin-bieber).jpg" data-aos="fade-up"
+                            data-aos-delay="1000">
+                            <img src="./Img/mainvocalist(twice).jpg" data-aos="fade-up"
+                            data-aos-delay="1300">
+                            <img src="./Img/mainvocalist(jaypark).jpg" data-aos="fade-up"
+                            data-aos-delay="1500">
+                            <hr>
+                        </div>
+                        <div class="location">
+                            <h2 data-aos="fade-right"
+                            data-aos-delay="600">Location</h2>
+                            <div class="icon-text">
+                                <i class="fa-solid fa-location-dot"></i>
+                            <span>Main Street, Washinton Kingdom</span>
+                        </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="right-details" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                        <img src="./Img/justinbieberconcert1.jpg" id="jbconcert">
+                        
+                    </div>
+                </div>
+
+
+
+                <div class="concert-details1">
+
+                    
+                <div class="left-details">
+                    <div class="title"  data-aos="fade-left"
+                    data-aos-delay="350">
+                        <h2>Concert Title</h2>
+                        <p>Olivia Rodrigo's wonderful show</p>
+                        <hr>
+                    </div>
+                    <div class="vocalist">
+                        <h2 data-aos="fade-left"
+                        data-aos-delay="470">Main Vocalists</h2>
+                        <img src="./Img/mainvocalist(olivi rodrigo).jpg" data-aos="fade-up"
+                        data-aos-delay="1000">
+                        <img src="./Img/mainvocalist(eminen).png" data-aos="fade-up"
+                        data-aos-delay="1300">
+                        <img src="./Img/mainvocalist(kai).jpg" data-aos="fade-up"
+                        data-aos-delay="1500">
+                        <hr>
+                    </div>
+                    <div class="location">
+                        <h2 data-aos="fade-left"
+                        data-aos-delay="600">Location</h2>
+                        <div class="icon-text">
+                            <i class="fa-solid fa-location-dot"></i>
+                        <span>Main Street, Washinton Kingdom</span>
+                    </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="right-details" data-aos="flip-up" data-aos-duration="2000">
+                    <img src="./Img/oliviaconcert1.jpg" id="oliviaconcert">
+                    
+                </div>
+            </div>
+          
+
+            
+            <div class="concert-details">
+
+                    
+                <div class="left-details">
+                    <div class="title" data-aos="fade-right"
+                    data-aos-delay="350">
+                        <h2>Concert Title</h2>
+                        <p>Kris Wu's excellent show</p>
+                        <hr>
+                    </div>
+                    <div class="vocalist">
+                        <h2 data-aos="fade-right"
+                        data-aos-delay="470">Main Vocalists</h2>
+                        <img src="./Img/mainvocalist(kris-wu).jpg" data-aos="fade-up"
+                        data-aos-delay="1000">
+                        <img src="./Img/mainvocalist(talyorswift).jpg" data-aos="fade-up"
+                        data-aos-delay="1300">
+                        <img src="./Img/MainVocalist(lil-Nas-x).jpg" data-aos="fade-up"
+                        data-aos-delay="1500">
+                        <hr>
+                    </div>
+                    <div class="location">
+                        <h2 data-aos="fade-right"
+                        data-aos-delay="600">Location</h2>
+                        <div class="icon-text">
+                            <i class="fa-solid fa-location-dot"></i>
+                        <span>Main Street, Washinton Kingdom</span>
+                    </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="right-details" data-aos="flip-right" data-aos-duration="2000">
+                    <img src="./Img/kriswuconcert1.jpg" id="kriswuconcert">
+                   
+                </div>
+            </div>
+          
+
+                </div>
+
+
+                
+
+                <!---------------------  End Concerts And Shows  ------------------------------------->
+
+<!----------------------   Booking  -------------------------------->
+
+                <div class="booking">
+                    <h1 data-aos="fade-left" data-aos-duration="700">Book <span>N</span>ow</h1>
+                    <div class="line" data-aos="fade-right" data-aos-duration="700"></div>
+                    <div class="booking-container">
+                        <div class="left-booking-container">
+                            <h3 data-aos="zoom-in-left" data-aos-duration="500">Billing Address</h3>
+                            <form action="">
+                                <div class="booking-input-field" data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom" data-aos-duration="600">
+                                    <label for="">Full Name</label><br>
+                                    <input type="text" required>
+                                
+                                </div>
+                                <div class="booking-input-field" data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom" data-aos-duration="800">
+                                    <label for="title">
+                                        Choose your concert :
+                                    </label><br>
+                                    <select id="title" name="title">
+                                        <option value="Justin-Bieber">Justin-Bieber</option>
+                                        <option value="Olivia-Rodrigo">Olivia-Rodrigo</option>
+                                        <option value="Kris-Wu">Kris-Wu</option>
+                                    </select>
+                                </div>
+                                <div class="booking-input-field" data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                                    <label for="">Address</label><br>
+                                    <input type="text" required>
+                               
+                                </div>
+                                <div class="booking-input-field-small" data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200">
+                                    <div class="booking-city">
+                                        <label for="">City</label><br>
+                                        <input type="text" required>
+                                      
+                                    </div>
+                                    <div class="booking-ZipCode" data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="1400">
+                                        <label for="">ZipCode</label><br>
+                                        <input type="text" required>
+                                       
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="right-booking-container">
+                            <form action="">
+                                <h3 data-aos="zoom-in-right" data-aos-duration="500">Payment</h3>
+                                <div class="card-payment">
+                                    <h4 data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="600">Accepting Cards</h4>
+                                    <div class="cards-img" data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="800">
+                                        <img src="./Img/visaCard.jpg">
+                                        <img src="./Img/paypalCard.jpg">
+                                        <img src="./Img/masterCard.jpg">
+                                    </div>
+                                </div>
+                                <div class="booking-input-field" data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                                    <label for="">Name of Card</label><br>
+                                    <input type="text" required>
+                      
+                                </div>
+                                <div class="booking-input-field" data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200">
+                                    <label for="">Credit Card number</label><br>
+                                    <input type="text" required>
+                                
+                                </div>
+                                <div class="booking-input-field-small" data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom" data-aos-duration="1400">
+                                    <div class="booking-exp">
+                                        <label for="">Exp Date</label><br>
+                                        <input type="text" required>
+                                    </div>
+                                    <div class="booking-ccv" data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="1600">
+                                        <label for="">CCV</label><br>
+                                        <input type="text" required>
+                                  
+                                    </div>
+                                </div>
+                                <button data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">Book Now</button>
+                            </form>
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+<!----------------------   End Booking  -------------------------------->
+
+    <!------------------------------  Footer --------------------------------->
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="Footer-details">
+                <h3>Languages</h3>
+                <p>English</p>
+                <p>Japanese</p>
+                <p>Korea</p>
+                <p>Myanmar</p>
+            </div>
+            <div class="Footer-details">
+                <h3>Pop Songs</h3>
+                <p>Rock Songs</p>
+                <p>Rap Songs</p>
+                <p>Sad Songs</p>
+                <p>Dj Songs</p>
+                <p>Sufi Songs</p>
+            </div>
+            <div class="Footer-details">
+                <h3>Company</h3>
+                <p>Google</p>
+                <p>Spotify</p>
+                <p>Netflix</p>
+                <p>Channel</p>
+            </div>
+            <div class="Footer-details">
+                <h3>Questions</h3>
+                <p>What can i help u?</p>
+                <p>Do u have some error?</p>
+                <p>Help Center</p>
+                <p>Service Center</p>
+            </div>
+            <div class="Footer-details">
+                <h3>Contact</h3>
+                <p>+9594382190</p>
+                <p>no.150, hlaing, minstreet</p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+          <!------------------------------  End Footer --------------------------------->
+
+          <script>
+            AOS.init();
+          </script>
+<script src="./music.js"></script>
+</body>
+</html>

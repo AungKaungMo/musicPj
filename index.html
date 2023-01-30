@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Project</title>
+    <!------------------   Google Fonts   ------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Julee&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----------------------  Font awesome  ------------------------------------->
+    <script
+      src="https://kit.fontawesome.com/de471be2d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!--------------   AOS Library   ----------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!--------------------------  CSS  --------------------------------------->
+    <link rel="stylesheet" href="./root.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!------------------------------  Header --------------------------------->
+
+    <div class="header" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1000">
+      <div class="navagation-bar">
+        <div class="logo" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+          <h1>LOGO</h1>
+        </div>
+        <div class="right-bar" data-aos="fade-up"
+        data-aos-duration="3000">
+          <div class="search-box">
+            <input type="text" placeholder="search" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="sign-btn">
+            <button>Sign in</button>
+          </div>
+        </div>
+      </div>
+      <div class="slide-bar" data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
+        <a href="News.html"><i class="fa-regular fa-newspaper"></i></a>
+        <a href="Concert.html"><i class="fa-solid fa-ticket"></i></a>
+        <a href="Music.html"><i class="fa-solid fa-music"></i></a>
+        <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a>
+      </div>
+      <div class="three-dots">
+        <div class="dot" id="homedot1" onclick="homeslide(this)"></div>
+        <div class="dot" id="homedot2" onclick="homeslide(this)"></div>
+        <div class="dot" id="homedot3" onclick="homeslide(this)"></div>
+      </div>
+    </div>
+
+    <!------------------------------  End Header --------------------------------->
+
+    <!------------------------------  Middle Concert --------------------------------->
+
+    <div class="concert-shows">
+      <h1 data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0">Concerts <span>&</span> Shows</h1>
+      <div class="line" data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="380"
+      data-aos-offset="0"></div>
+      <div class="concert-details">
+        <div class="left-details">
+          <div class="title" data-aos="fade-right"
+          data-aos-delay="350">
+            <h2>Concert Title</h2>
+            <p>Justin Bieber's show and many other artists</p>
+            <hr />
+          </div>
+          <div class="vocalist">
+            <h2   data-aos="fade-right"
+            data-aos-delay="470">Main Vocalists</h2>
+            <img src="./Img/MainVocalist(justin-bieber).jpg" data-aos="fade-up"
+            data-aos-delay="1300"
+            data-aos-anchor-placement="bottom-bottom"/>
+            <img src="./Img/mainvocalist(twice).jpg"  data-aos="fade-up"
+            data-aos-delay="1500"
+            data-aos-anchor-placement="bottom-bottom"/>
+            <img src="./Img/mainvocalist(jaypark).jpg"  data-aos="fade-up"
+            data-aos-delay="1800"
+            data-aos-anchor-placement="bottom-bottom"/>
+            <hr />
+          </div>
+          <div class="location"  data-aos="fade-right"
+          data-aos-delay="600">
+            <h2>Location</h2>
+            <div class="icon-text">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Main Street, Washinton Kingdom</span>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div class="right-details" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+          <img src="./Img/justinbieberconcert1.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------  End Middle Concert --------------------------------->
+
+    <!------------------------------  Services --------------------------------->
+
+    <div class="services">
+      <h1 data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">Services <span>that</span> we prepared</h1>
+      <div class="line" data-aos="fade-left"></div>
+      <div class="servicesBox">
+        <div class="serviceBoxOne" data-aos="fade-down-left" data-aos-delay="500">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h2>security</h2>
+
+          <p>
+            24hours security and gurds always have no need to worry about
+            anything always have no.
+          </p>
+        </div>
+        <div class="serviceBoxTwo" data-aos="flip-down" data-aos-delay="900">
+          <i class="fa-solid fa-truck-medical"></i>
+          <h2>Ambulance</h2>
+
+          <p>
+            24hours security and gurds always have no need to worry about
+            anything always have no.
+          </p>
+        </div>
+        <div class="serviceBoxThree" data-aos="fade-down-right" data-aos-delay="700">
+          <i class="fa-solid fa-chart-area"></i>
+          <h2>Area</h2>
+          <p>
+            24hours security and gurds always have no need to worry about
+            anything always have no.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------  End Services --------------------------------->
+
+    <!------------------------------  Customers Reviews --------------------------------->
+
+    <div class="customers-reviews">
+      <h1 data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="400"
+      data-aos-offset="0">Customer'<span>s</span> reviews</h1>
+      <div class="line"  data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="800"
+      data-aos-offset="0"></div>
+      <div class="reviews swiper mySwiper">
+        <div class="swiper-wrapper" >
+          <div class="review-one swiper-slide" data-aos="fade-zoom-up"
+          data-aos-delay="700">
+            <img src="./Img/review1.jpg" />
+
+            <h4>John D sem</h4>
+            <div class="text-review-box">
+              <p>
+                Lorem ipsum dolor sit, amet cons dolor sit, ame Lorem ipsum
+                dolor sit, amet cons dolor sit, ame t consReprehenderit, quidem!
+                ectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="review-two swiper-slide" data-aos="fade-zoom-in"
+          data-aos-delay="700">
+            <img src="./Img/review3.png" />
+
+            <h4>July Smith</h4>
+            <div class="text-review-box">
+              <p>
+                Lorem ipsum dolor sit, amet cons dolor sit, ameLorem ipsum dolor
+                sit, amet cons dolor sit, ame t consReprehenderit, quidem!
+                ectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+
+          <div class="review-one swiper-slide">
+            <img src="./Img/review2.jpg" />
+
+            <h4>John D sem</h4>
+            <div class="text-review-box">
+              <p>
+                Lorem ipsum dolor sit, amet cons dolor sit, ame Lorem ipsum
+                dolor sit, amet cons dolor sit, ame t consReprehenderit, quidem!
+                ectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="review-two swiper-slide">
+            <img src="./Img/review4.jpg" />
+
+            <h4>July Smith</h4>
+            <div class="text-review-box">
+              <p>
+                Lorem ipsum dolor sit, amet cons dolor sit, ameLorem ipsum dolor
+                sit, amet cons dolor sit, ame t consReprehenderit, quidem!
+                ectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+
+        </div>
+    
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!------------------------------  End Customers Reviews --------------------------------->
+
+    <!------------------------------  Footer --------------------------------->
+
+    <div class="footer">
+      <div class="footer-container">
+        <div class="Footer-details">
+          <h3>Languages</h3>
+          <p>English</p>
+          <p>Japanese</p>
+          <p>Korea</p>
+          <p>Myanmar</p>
+        </div>
+        <div class="Footer-details">
+          <h3>Pop Songs</h3>
+          <p>Rock Songs</p>
+          <p>Rap Songs</p>
+          <p>Sad Songs</p>
+          <p>Dj Songs</p>
+          <p>Sufi Songs</p>
+        </div>
+        <div class="Footer-details">
+          <h3>Company</h3>
+          <p>Google</p>
+          <p>Spotify</p>
+          <p>Netflix</p>
+          <p>Channel</p>
+        </div>
+        <div class="Footer-details">
+          <h3>Questions</h3>
+          <p>What can i help u?</p>
+          <p>Do u have some error?</p>
+          <p>Help Center</p>
+          <p>Service Center</p>
+        </div>
+        <div class="Footer-details">
+          <h3>Contact</h3>
+          <p>+9594382190</p>
+          <p>no.150, hlaing, minstreet</p>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------  End Footer --------------------------------->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      slidesPerGroup: 2,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        },
+        790: {
+          slidesPerView: 2,
+        },
+       
+      },
+    });
+  </script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./music.js"></script>
+  </body>
+</html>
